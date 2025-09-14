@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ if .Title }}{{ .Title }} · {{ end }}{{ site.Title }}</title>
+    <title>{{ if or .IsHome (eq .Title site.Title) }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
     {{/* load Tailwind via Hugo Pipes + PostCSS */}}
     {{ $css := resources.Get "css/main.css" | postCSS (dict "config" "postcss.config.js") }}
     {{ if hugo.IsProduction }}
