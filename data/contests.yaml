@@ -29,7 +29,7 @@ uil1:
     email: bryce.hulett@cfisd.net
   
   # link to an interest form; method where interested parties can show their interest
-  interestForm: ~ # opt
+  interestForm: https://forms.gle/zBRaoUCCo8Zadu4x5 # opt
 
 uil2:
   category: UIL Mathematics
@@ -49,7 +49,7 @@ uil2:
     name: Bryce Hulett 
     email: bryce.hulett@cfisd.net
 
-  interestForm: ~ # opt
+  interestForm: https://forms.gle/zBRaoUCCo8Zadu4x5 # opt
 
 uil3:
   category: UIL Mathematics
@@ -69,7 +69,7 @@ uil3:
     name: Bryce Hulett 
     email: bryce.hulett@cfisd.net
 
-  interestForm: ~
+  interestForm: https://forms.gle/zBRaoUCCo8Zadu4x5
 
 uil4:
   category: UIL Science
