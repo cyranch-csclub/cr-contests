@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <section class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">Contests offered at Cypress Ranch High School</h1>
+    {{ $data := site.Data.contests }}
+    {{ if not $data }}
+      <p class="text-red-600">&lt;Content Missing&gt; data/contests.yaml not found</p>
+    {{ else }}
+      {{ range $key, $value := $data }}
+        {{/* each top-level key like uil1, uil2 ... */}}
+        {{ partial "contest-card.html" $value }}
+      {{ end }}
+    {{ end }}
+  </section>
+{{ end }}
+
+

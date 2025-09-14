@@ -1,0 +1,10 @@
+baseURL: /
+languageCode: en-us
+title: Cypress Ranch Contests
+markup:
+  highlight:
+    noClasses: false
+module:
+  hugoVersion:
+    extended: true
+taxonomies: {}

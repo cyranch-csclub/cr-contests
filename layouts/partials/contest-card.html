@@ -1,0 +1,67 @@
+{{/* expects a dict for one contest entry */}}
+<article class="w-full bg-white shadow-sm border border-gray-200 rounded-lg overflow-hidden mb-6 dark:bg-gray-900 dark:border-gray-800">
+  <div class="p-6">
+    <header class="mb-3">
+      <p class="mb-1">
+        {{ with .category }}
+          <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700 ring-1 ring-inset ring-indigo-600/10 dark:bg-indigo-950 dark:text-indigo-300 dark:ring-indigo-400/20">{{ . }}</span>
+        {{ else }}
+          <span class="text-red-600">&lt;Content Missing&gt;</span>
+        {{ end }}
+      </p>
+      <h2 class="text-2xl font-semibold mt-1 text-gray-900 dark:text-gray-50">
+        {{ with .contest }}{{ . }}{{ else }}<span class="text-red-600">&lt;Content Missing&gt;</span>{{ end }}
+      </h2>
+    </header>
+
+    <p class="mb-4">
+      {{ with .officialWebsite }}
+        <a class="text-blue-600 hover:underline break-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 rounded dark:text-blue-400 dark:focus:ring-offset-gray-900" href="{{ . }}" target="_blank" rel="noopener">Official Contest Website</a>
+      {{ else }}
+        <span class="text-red-600">&lt;Content Missing&gt;</span>
+      {{ end }}
+    </p>
+
+    <div class="mb-4 leading-relaxed text-gray-700 dark:text-gray-200">
+      {{ with .description }}{{ . | markdownify }}{{ else }}<span class="text-red-600">&lt;Content Missing&gt;</span>{{ end }}
+    </div>
+
+    <section class="grid sm:grid-cols-2 gap-4">
+      <div class="bg-gray-50 rounded-md p-4 border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+        <h3 class="text-xs font-semibold uppercase tracking-wide text-indigo-700 dark:text-indigo-300 mb-2">Club</h3>
+        {{ with .clubDesc }}
+          {{ with .name }}
+            <h4 class="mt-1 text-base font-semibold text-gray-900 dark:text-gray-50">{{ . }}</h4>
+          {{ else }}
+            <span class="text-red-500">&lt;Content Missing&gt;</span>
+          {{ end }}
+          {{ if .website }}
+            <p class="mt-1"><span class="text-gray-500 dark:text-gray-400">Website:</span> <a class="text-blue-600 hover:underline break-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 rounded dark:text-blue-400 dark:focus:ring-offset-gray-800" href="{{ .website }}" target="_blank" rel="noopener">{{ .website }}</a></p>
+          {{ end }}
+          <p class="mt-1"><span class="text-gray-500 dark:text-gray-400">Room</span> <span class="text-gray-900 dark:text-gray-50">{{ with .room }}{{ . }}{{ else }}<span class="text-red-500">&lt;Content Missing&gt;</span>{{ end }}</span></p>
+          <p class="mt-1"><span class="text-gray-500 dark:text-gray-400">Meet times:</span> <span class="text-gray-900 dark:text-gray-50">{{ with .meetTimes }}{{ . }}{{ else }}<span class="text-red-500">&lt;Content Missing&gt;</span>{{ end }}</span></p>
+        {{ else }}
+          <span class="text-red-600">&lt;Content Missing&gt;</span>
+        {{ end }}
+      </div>
+
+      <div class="bg-gray-50 rounded-md p-4 border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+        <h3 class="text-xs font-semibold uppercase tracking-wide text-indigo-700 dark:text-indigo-300 mb-2">Teacher Sponsor</h3>
+        {{ with .teacher_sponsor }}
+          <p class="mt-2 text-gray-900 dark:text-gray-50 font-semibold">{{ with .name }}{{ . }}{{ else }}<span class="text-red-500">&lt;Content Missing&gt;</span>{{ end }}</p>
+          <p class="mt-1">{{ with .email }}<a class="text-blue-600 hover:underline break-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 rounded dark:text-blue-400 dark:focus:ring-offset-gray-800" href="mailto:{{ . }}">{{ . }}</a>{{ else }}<span class="text-red-500">&lt;Content Missing&gt;</span>{{ end }}</p>
+        {{ else }}
+          <span class="text-red-600">&lt;Content Missing&gt;</span>
+        {{ end }}
+      </div>
+    </section>
+
+    {{ if .interestForm }}
+      <div class="mt-4">
+        <a class="inline-flex items-center px-4 py-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-600 dark:focus:ring-offset-gray-900" href="{{ .interestForm }}" target="_blank" rel="noopener">Interest form</a>
+      </div>
+    {{ end }}
+  </div>
+</article>
+
+

@@ -1,0 +1,110 @@
+uil1:
+  # the general category the contest is in.
+  category: UIL Mathematics
+
+  # the actual contest name
+  # eg UIL Mathematics has 3 contests- math, number sense, and calculator applications
+  contest: Mathematics
+
+  # official website of the contest (if school contest, optional)
+  officialWebsite: https://www.uiltexas.org/academics/stem/mathematics
+
+  # supports html and links and all
+  description: > 
+    A 40-minute, multiple-choice exam with 60 questions, 
+    designed to test knowledge and understanding in Algebra I, 
+    Geometry, Algebra II, Pre-calculus, AP Calculus (BC) and AP Statistics.
+
+  # the club that 'manages' the contest - to know where to meet
+  clubDesc:
+    name: Competitive Math Club
+    website: ~ # opt
+    room: B1178
+    meetTimes: TBD
+
+  # main teacher sponsor of the contest
+  # if multiple, just put one
+  teacher_sponsor:
+    name: Bryce Hulett 
+    email: bryce.hulett@cfisd.net
+  
+  # link to an interest form; method where interested parties can show their interest
+  interestForm: ~ # opt
+
+uil2:
+  category: UIL Mathematics
+  contest: Number Sense
+  officialWebsite: https://www.uiltexas.org/academics/stem/number-sense
+  description: >
+    A ten-minute, 80 question mental math test 
+    covering all high school mathematics courses.
+  
+  clubDesc:
+    name: Competitive Math Club
+    website: ~ # opt
+    room: B1178
+    meetTimes: TBD # not opt - put TBD if not decided
+
+  teacher_sponsor:
+    name: Bryce Hulett 
+    email: bryce.hulett@cfisd.net
+
+  interestForm: ~ # opt
+
+uil3:
+  category: UIL Mathematics
+  contest: Calculator Applications
+  officialWebsite: https://www.uiltexas.org/academics/stem/calculator-applications
+  description: >
+    A thirty-minute test comprised of 70 mathematical 
+    problems that are solved with a handheld calculator.
+  
+  clubDesc:
+    name: Competitive Math Club
+    website: ~
+    room: B1178
+    meetTimes: TBD
+
+  teacher_sponsor:
+    name: Bryce Hulett 
+    email: bryce.hulett@cfisd.net
+
+  interestForm: ~
+
+uil4:
+  category: UIL Science
+  contest: Science
+  officialWebsite: https://www.uiltexas.org/academics/stem/science
+  description:
+    "A two-hour objective test with 60 questions: 20 from biology, 20 from chemistry and 20 from physics."
+  
+  clubDesc:
+    name: UIL Science Club
+    website: ~
+    room: 2520
+    meetTimes: Alternate Wednesdays, after school
+  
+  teacher_sponsor:
+    name: Katie Lauver
+    email: katie.lauver@cfisd.net
+  
+  interestForm: https://forms.gle/sxxsUziJVmYVHDa37
+
+uil5:
+  category: UIL Computer Science
+  contest: Computer Science
+  officialWebsite: https://www.uiltexas.org/academics/stem/computer-science
+  description: >
+    A 45-minute written exam for both components, along with a two-hour programming contest for teams.
+  
+  clubDesc:
+    name: Computer Science Club
+    website: https://cyranch-csclub.github.io
+    room: 1560
+    meetTimes: Alternate Thursdays, after school
+  
+  teacher_sponsor:
+    name: Bryce Hulett
+    email: bryce.hulett@cfisd.net
+  
+  interestForm: ~
