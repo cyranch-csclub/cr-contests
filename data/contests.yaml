@@ -108,3 +108,20 @@ uil5:
     email: bryce.hulett@cfisd.net
   
   interestForm: ~
+
+rock:
+  category: Rocketry
+  contest: American Rocketry Challenge
+  officialWebsite: https://rocketrychallenge.org/
+  description: This contest is about building model rockets, designed to go a set height changed each year. By participating in the contest, you will learn how to design, engineer, build and launch these model rockets, as well as gain experience in the field of Aerospace Engineering in general.
+
+  clubDesc:
+    name: Cypress Ranch Aerospace Club
+    room: 1663
+    meetTimes: TBD
+  
+  teacher_sponsor:
+    name: Stacey Pantin
+    email: stacey.pantin@cfisd.net
+  
+  interestForm: https://docs.google.com/forms/d/e/1FAIpQLSfNs5tYE5YALvT6S4kh1umj2mAYGsVJ8uZX62suCXr7uIs7fw/viewform?usp=header

@@ -1,6 +1,15 @@
 {{ define "main" }}
   <section class="container mx-auto px-4 py-8">
     <h1 class="text-3xl font-bold mb-6">Contests offered at Cypress Ranch High School</h1>
+    <p class="text-sm text-gray-500 dark:text-gray-400 -mt-4 mb-0">
+      Last updated:
+      <time datetime="{{ now.UTC | time.Format "2006-01-02T15:04:05Z07:00" }}">
+        {{ now | time.Format "Jan 2, 2006, 3:04 PM MST" }}
+      </time>
+    </p>
+    <p class="mb-8">
+      <a class="text-blue-600 hover:underline dark:text-blue-400" href="https://forms.gle/XsgWethVxb3ZK39MA" target="_blank" rel="noopener">update information</a>
+    </p>
     {{ $data := site.Data.contests }}
     {{ if not $data }}
       <p class="text-red-600">&lt;Content Missing&gt; data/contests.yaml not found</p>
