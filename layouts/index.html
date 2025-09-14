@@ -14,9 +14,16 @@
     {{ if not $data }}
       <p class="text-red-600">&lt;Content Missing&gt; data/contests.yaml not found</p>
     {{ else }}
-      {{ range $key, $value := $data }}
-        {{/* each top-level key like uil1, uil2 ... */}}
-        {{ partial "contest-card.html" $value }}
+      {{/* collect values and add key for stable tie-breaking */}}
+      {{ $list := slice }}
+      {{ range $k, $v := $data }}
+        {{ $list = $list | append (merge $v (dict "_key" $k)) }}
+      {{ end }}
+
+      {{ $list = sort $list "contest" "asc" }}
+      {{ $list = sort $list "category" "asc" }}
+      {{ range $i, $item := $list }}
+        {{ partial "contest-card.html" $item }}
       {{ end }}
     {{ end }}
   </section>
