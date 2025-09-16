@@ -109,6 +109,24 @@ uil5:
   
   interestForm: ~
 
+uil6:
+  category: UIL Language Arts
+  contest: Literary Criticism
+  officialWebsite: https://www.uiltexas.org/academics/academic-contests/literary-criticism
+  description: 65 question MCQ with one essay, 90 mins. over literary terms and reading selections
+
+  clubDesc:
+    name: UIL Lit Crit
+    website: 
+    room: 2520
+    meetTimes: Every other Thursday
+
+  teacher_sponsor:
+    name: Katie Lauver
+    email: katie.lauver@cfisd.net
+
+  interestForm: ~
+
 # not official yet
 # rock:
 #   category: Rocketry
