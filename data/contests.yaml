@@ -127,6 +127,80 @@ uil6:
 
   interestForm: ~
 
+ibo:
+  category: National Olympiad
+  contest: IBO (International Biology Olympiad)
+  officialWebsite: https://www.ibo-info.org/en/
+  description: The International Biology Olympiad is an annual, international competition for top high school students who test their theoretical and practical biological knowledge for individual medals.
+
+  clubDesc:
+    name: SCEC (Stem Career Exploration Club)
+    website: 
+    room: B1125
+    meetTimes: Once a week (Varies)
+
+  teacher_sponsor:
+    name: Elisabeth Blush
+    email: elisabeth.blush@cfisd.net
+
+  interestForm: https://forms.gle/n1zRhqg7Jrs7Lh4c6
+
+isef:
+  category: STEM Research
+  contest: Regeneron ISEF (International Science and Engineering Fair)
+  officialWebsite: https://www.societyforscience.org/isef/
+  description: The International Science and Engineering Fair (ISEF) is the worlds largest pre-college STEM research competition. High school students from around the world compete by presenting their independent research projects, which cover 22 scientific disciplines. To reach ISEF, students must first win at local, regional, or state-affiliated science fairs. The annual week-long event showcases the talents of these top young scientists and provides them with a platform to display their innovations to professional scientists. Participants compete for nearly $9 million in scholarships, prizes, and awards.
+
+  clubDesc:
+    name: SCEC (Stem Career Exploration Club)
+    website: 
+    room: B1125
+    meetTimes: Once a week (Day varies on availability)
+
+  teacher_sponsor:
+    name: Elisabeth Blush
+    email: elisabeth.blush@cfisd.net
+
+  interestForm: https://forms.gle/puv3tAApnUnJgUCm6
+
+nsb:
+  category: Bowls
+  contest: National Science Bowl
+  officialWebsite: https://science.osti.gov/wdts/nsb
+  description: The National Science Bowl is a high-speed, high-stakes academic trivia showdown where brilliant middle and high school students battle it out in a fast-paced, buzzer-based quiz competition. Created by the U.S. Department of Energy, its less a test and more of a mental marathon that covers all major branches of science and math.
+
+  clubDesc:
+    name: SCEC (underclassmen) & Science NHS (upperclassmen)
+    website: 
+    room: B1125 (SCEC)
+    meetTimes: Once a week (for SCEC) & once a month (for SNHS)
+
+  teacher_sponsor:
+    name: Tawnya Mann (SNHS)
+    email: tawnya.mann@cfisd.net
+
+  interestForm: ~
+
+jshs:
+  category: Science Research
+  contest: Junior Science and Humanities Symposium (JSHS)
+  officialWebsite: https://www.jshs.org/
+  description: The Junior Science and Humanities Symposium (JSHS) is a Department of Defense-sponsored STEM program for high school students. It encourages students in grades 9-12 to conduct original research in science, technology, engineering, and mathematics. Participants can compete for scholarships and recognition by presenting their research to a panel of judges and peers at regional and national symposia.
+
+  clubDesc:
+    name: SCEC (Stem Career Exploration Club)
+    website: 
+    room: B1125
+    meetTimes: Once a week (Varies)
+
+  teacher_sponsor:
+    name: Elisabeth Blush
+    email: elisabeth.blush@cfisd.net
+
+  interestForm: https://forms.gle/D8uRczojef8Lycz16
+
+
+
 # not official yet
 # rock:
 #   category: Rocketry
